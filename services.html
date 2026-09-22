@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our fabrication services. Custom gates, carports, fencing, and structural steel solutions by Basil Moolman.">
+    <title>Services & Products | Basil Moolman</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(26, 37, 44, 0.85), rgba(26, 37, 44, 0.9)), url('logo-bg.jpg') center/cover no-repeat;
+            color: var(--text-light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .page-header h1 {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-row {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 4rem;
+            align-items: center;
+        }
+        
+        @media (min-width: 768px) {
+            .service-row {
+                grid-template-columns: 1fr 1fr;
+            }
+            .service-row:nth-child(even) .service-img-container {
+                order: 2;
+            }
+            .service-row:nth-child(even) .service-content {
+                order: 1;
+            }
+        }
+        
+        .service-img-container img {
+            border-radius: 8px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+        
+        .service-content h2 {
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .service-list {
+            margin-top: 1rem;
+            list-style: none;
+        }
+        
+        .service-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        
+        .service-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--secondary-color);
+        }
+    </style>
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Top Ribbon -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="logo-small.png" alt="Logo" class="nav-logo">Basil Moolman</a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html" class="active">Services & Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Services & Products</h1>
+            <p>Comprehensive steel fabrication solutions for every application.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            
+            <!-- Service 1 -->
+            <div class="service-row">
+                <div class="service-img-container">
+                    <img src="WhatsApp Image 2026-09-22 at 18.47.16.jpeg" alt="Custom Gates and Fencing" onerror="this.src='https://images.unsplash.com/photo-1614945417436-9b048700a402?auto=format&fit=crop&q=80&w=800';">
+                </div>
+                <div class="service-content">
+                    <h2>Custom Gates & Fencing</h2>
+                    <p>Security meets aesthetic appeal. We fabricate high-quality, robust gates and fencing suitable for residential estates, commercial properties, and industrial sites.</p>
+                    <ul class="service-list">
+                        <li>Sliding and swing gates</li>
+                        <li>Automated gate preparation</li>
+                        <li>Palisade fencing</li>
+                        <li>Custom decorative metalwork</li>
+                        <li>Galvanized and powder-coated finishes</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-row">
+                <div class="service-img-container">
+                    <img src="WhatsApp Image 2026-09-22 at 18.47.10 (1).jpeg" alt="Carports and Awnings" onerror="this.src='https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800';">
+                </div>
+                <div class="service-content">
+                    <h2>Carports & Covers</h2>
+                    <p>Protect your valuable assets with our custom-built carports and shade structures. Engineered to withstand harsh weather conditions while complementing your property's exterior.</p>
+                    <ul class="service-list">
+                        <li>Single, double, and multi-bay carports</li>
+                        <li>Cantilever designs for easy access</li>
+                        <li>Industrial loading bay covers</li>
+                        <li>Choice of roofing materials (IBR, Corrugated, Polycarbonate)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-row">
+                <div class="service-img-container">
+                    <img src="WhatsApp Image 2026-09-22 at 18.47.15 (1).jpeg" alt="Structural Steel" onerror="this.src='https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&q=80&w=800';">
+                </div>
+                <div class="service-content">
+                    <h2>Structural Steelwork</h2>
+                    <p>The backbone of modern construction. We provide precise structural steel fabrication for builders, architects, and direct clients.</p>
+                    <ul class="service-list">
+                        <li>I-beams, H-columns, and structural channels</li>
+                        <li>Mezzanine floors and platforms</li>
+                        <li>Staircases and custom railings</li>
+                        <li>Warehouse extensions and roof trusses</li>
+                        <li>On-site welding and installation</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="cta">
+        <div class="container">
+            <h2>Have a custom project in mind?</h2>
+            <p>Our team is ready to help you bring your vision to life. Let's discuss your requirements.</p>
+            <a href="contact.html" class="btn btn-secondary mt-2" style="margin-top: 1.5rem;">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="logo" style="font-size: 1.2rem;"><img src="logo-small.png" alt="Logo" class="footer-logo">Basil Moolman</h4>
+                    <p style="color: #bbb; max-width: 250px;">Premium metal fabrication and structural steelwork for residential and industrial projects.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services & Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Basil Moolman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
